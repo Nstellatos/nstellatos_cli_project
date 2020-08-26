@@ -1,4 +1,4 @@
-class NstellatosCliProject::Cli
+class Cli
     def run
         system("clear")
         greeting
@@ -17,18 +17,19 @@ class NstellatosCliProject::Cli
     end
     
     def get_states
-        @states = NstellatosCliProject::State.all
+        @states = States.all
 
     end
     
     def list_states
-        puts "Choose a State to see current Covid-19 values:"
-        @states.each.with_index(1) do |state, index|
+        puts "Choose a State by typing the number next to is in order to see current Covid-19 values:"
+        @states.each_with_index do |state, index|
             puts "#{index}. #{state.name}"
         end
+        get_user_state
     end
     
-    def get_user_state
+    def self.get_user_state
         chosen_state = gets.strip.to_i
         show_input_for(chosen_state) if valid_input(chosen_state, @states)
     end

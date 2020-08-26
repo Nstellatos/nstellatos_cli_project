@@ -1,7 +1,7 @@
 require_relative "nstellatos_cli_project/version"
 require_relative "nstellatos_cli_project/cli"
 require_relative "nstellatos_cli_project/api"
-require_relative "nstellatos_cli_project/state"
+require_relative "nstellatos_cli_project/states"
 
 require 'pry'
 require 'httparty'
