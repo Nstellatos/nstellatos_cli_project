@@ -1,0 +1,28 @@
+NOTES:
+Covid-19 current values for all states
+- greet the user
+- output states in a numbered list
+- user selects state number OR enters in name of the state(needs to be converted)
+    - if it is an invalid response - ask them to provide a valid response
+- when state is selected it returns info about the current covid-19 data for that state
+- give the user the option to go back to the list or exit
+
+
+What classes do I want to create?
+
+ - CLI class 
+    - prints greeting
+    - prints numbered list of states
+    - user inputs number of state or state abbreviation they want to see info
+    - print info of states current covid data 
+    - print options - list or exit 
+    - user inputs instructions for next action 
+    - program exits 
+
+
+
+
+
+ - States class
+    - 
+

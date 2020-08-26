@@ -1,0 +1,14 @@
+require_relative "../lib/nstellatos_cli_project.rb"
+ 
+
+
+NstellatosCliProject::Cli.new.run
+
+
+
+
+
+
+
+
+
