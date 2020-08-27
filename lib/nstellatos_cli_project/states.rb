@@ -2,12 +2,13 @@ class States
 
   @@all = []
 
-  attr_accessor :name, :positive, :recovered_cases, :deaths
+  attr_accessor :name, :positive, :recovered_cases, :death
 
-  def initialize(name, positive)
+  def initialize(name, positive, recovered_cases, death)
     @name = name
     @positive = positive
-    recovered_cases
+    @recovered_cases = recovered_cases
+    @death = death
     @@all << self
   end 
 

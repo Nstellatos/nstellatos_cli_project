@@ -1,8 +1,9 @@
 require_relative "../lib/nstellatos_cli_project.rb"
 require 'rest-client'
 
-Api.fetch_data
 Cli.run
+Api.fetch_data
+
 
 
 
